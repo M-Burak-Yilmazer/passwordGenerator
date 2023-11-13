@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 
 body {
-  background-color: #8D9FA6;
+ background-color: #FF9A8B;
+background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,7 +12,7 @@ body {
 }
 h1{
   text-align: center;
-  color:#73020C;
+  color:#8338ec;
   font-size: 3rem;
 }
 div {
@@ -36,7 +38,7 @@ input {
   display: block;
 
   border: 2px solid green;
-  background-color: ghostwhite;
+  background-color: #f4a261;
   color: green;
   height: 70px;
   font-weight: 600;
@@ -51,7 +53,7 @@ input {
 
   width:300px;
   border: 2px solid blue;
-  background-color: ghostwhite;
+  background-color: #e76f51;
   color: blue;
   height: 70px;
   font-weight: 600;
