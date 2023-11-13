@@ -1,12 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
 body {
-  background-color: cornsilk;
+  background-color: #8D9FA6;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: 'Open Sans', sans-serif;
+}
+h1{
+  text-align: center;
+  color:#73020C;
+  font-size: 3rem;
 }
 div {
-  margin: 5rem auto;
+  margin: 2rem auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -16,6 +24,7 @@ div {
 input {
   height: 70px;
   width: 250px;
+  flex:1;
   border-radius: 10px;
   font-size: 2rem;
   padding:0 1rem;
@@ -24,13 +33,30 @@ input {
 }
 
 .btn {
+  display: block;
+  flex:1;
   border: 2px solid green;
   background-color: ghostwhite;
   color: green;
   height: 70px;
   font-weight: 600;
   border-radius: 10px;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  width:200px;
   cursor: pointer;
-  padding: 1rem;
+ 
+}
+.copy{
+  display: block;
+  flex:1;
+  width:200px;
+  border: 2px solid blue;
+  background-color: ghostwhite;
+  color: blue;
+  height: 70px;
+  font-weight: 600;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  
 }

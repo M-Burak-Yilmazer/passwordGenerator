@@ -40,8 +40,11 @@ let obj = {
 
 let password = [];
 
-let lettersCombine= obj["letters"].map(item=> item + ","+ item.toUpperCase()).join().split(",")
-console.log(lettersCombine)
+let lettersCombine = obj["letters"]
+  .map((item) => item + "," + item.toUpperCase())
+  .join()
+  .split(",");
+console.log(lettersCombine);
 
 const passwordGenerator = () => {
   let password = [];
@@ -66,20 +69,30 @@ const passwordGenerator = () => {
       password.push(
         obj["letters"][Math.floor(Math.random() * obj["letters"].length)]
       );
-    }else{
-        password.push(lettersCombine[Math.floor(Math.random() * lettersCombine.length)])
+    } else {
+      password.push(
+        lettersCombine[Math.floor(Math.random() * lettersCombine.length)]
+      );
     }
   }
 
   const shuffle = (array) => {
     return array.sort(() => Math.random() - 0.5);
-  }; 
-password = shuffle(password)
+  };
+  password = shuffle(password);
 
   return password.join("");
 };
 console.log(passwordGenerator());
 
-document.querySelector(".btn").addEventListener("click", ()=>{
-    document.querySelector(".input-area").value= passwordGenerator()
-})
+let inputArea = document.querySelector(".input-area");
+document.querySelector(".btn").addEventListener("click", () => {
+  inputArea.value = passwordGenerator();
+});
+
+document.querySelector(".copy").addEventListener("click", () => {
+  inputArea.select();
+  inputArea.setSelectionRange(0, 99999);
+  navigator.clipboard.writeText(inputArea.value);
+ 
+});
