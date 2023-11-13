@@ -1,0 +1,35 @@
+body {
+  background-color: cornsilk;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+div {
+  margin: 5rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+input {
+  height: 70px;
+  width: 250px;
+  border-radius: 10px;
+  font-size: 2rem;
+  padding-left: 1rem;
+  border: none;
+  border: 2px solid orange;
+}
+
+.btn {
+  border: 2px solid green;
+  background-color: ghostwhite;
+  color: green;
+  height: 70px;
+  font-weight: 600;
+  border-radius: 10px;
+  font-size: 2rem;
+  cursor: pointer;
+}
